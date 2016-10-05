@@ -1,0 +1,11 @@
+.homepage
+  .homepage-cover(style=forum.coverUrl && `background-image: linear-gradient(
+      rgba(255,255,255, 0.5),
+      rgba(255,255,255, 0.6)
+    ), url('${forum.coverUrl}')`)
+    h1= forum.title
+    p= forum.summary
+  if topics && topics.length
+    .topics-container
+      each topic in topics
+        include ./topic-card/template

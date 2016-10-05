@@ -1,0 +1,8 @@
+a.topic-card(href=topic.url)
+  .topic-cover(
+    style=topic.coverUrl && `background-image: url('${topic.coverUrl}')`)
+  h3.topic-title= topic.mediaTitle
+  p.topic-participants
+    = topic.participants && topic.participants.length
+    &nbsp;
+    = t('proposal-article.participant.plural')
