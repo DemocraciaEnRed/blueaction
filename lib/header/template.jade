@@ -26,7 +26,7 @@
       span= t('header.signup')
     - var target = config.homeLink ? {} : { 'target': '_blank'};
     a.login.pull-left(href=config.organizationUrl, style=style)&attributes(target)
-      span= config.organizationName
+      span= t('help.about.title')
 
   .ssl-warning.hide
     a(href='//docs.democracyos.org/configuration.html#ssl')= t('header.insecure-warning')
